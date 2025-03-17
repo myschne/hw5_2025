@@ -12,7 +12,7 @@ body {
     100% {opacity: 1; width: 475px;}
   }
   
-#logo {
+  #logo {
     animation: logo-grow 5s forwards;
   }
   header {
@@ -75,15 +75,26 @@ body {
     }
   
     .pricing {
-      justify-content: space-around;
-      align-items: flex-start;
-    }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
   
-    .card {
-      flex: 1 1 275px;
-    }
+      .card {
+        flex: 0 1 275px; /* Fixed width, no growth */
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        height: 75%; /* Fixed height for all cards */
+      }
+      
+      .card:nth-child(2) {
+        height: 100%; /* Make the middle card taller */
+      }
+      
   
-    /* Sticky header */
+
     body > header {
       position: sticky;
       top: 0;
