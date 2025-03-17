@@ -8,17 +8,11 @@ body {
   padding: 0;
 }
 @keyframes logo-grow {
-    0% {
-      width: 25px;
-      opacity: 0;
-    }
-    100% {
-      width: 475px;
-      opacity: 1;
-    }
+    0%   {opacity: 0; width: 25px;}
+    100% {opacity: 1; width: 475px;}
   }
   
-  .logo {
+#logo {
     animation: logo-grow 5s forwards;
   }
   header {
@@ -34,7 +28,7 @@ body {
   }
   .nav_links a,
   .nav_links a:visited {
-    color: #000; /* Example color, adjust based on screenshot */
+    color: blue; 
     text-decoration: none;
   }
   .card > header {
@@ -45,7 +39,7 @@ body {
     border-top-right-radius: 50px;
   }
   .card {
-    overflow: hidden; /* Ensures rounded corners appear correctly */
+    overflow: hidden; 
     flex: 1 1 450px;
     display: flex;
     flex-direction: column;
